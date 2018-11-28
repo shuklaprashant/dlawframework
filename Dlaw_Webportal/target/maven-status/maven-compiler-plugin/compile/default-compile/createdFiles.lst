@@ -1,6 +1,0 @@
-com\dlaw\spring\connector\DB2Connector.class
-com\dlaw\spring\controller\HomeController.class
-com\dlaw\spring\common\LanguageSelector.class
-com\dlaw\spring\utilities\SomeUtility.class
-com\dlaw\spring\model\User.class
-com\dlaw\spring\authenticator\AuthenticationService.class
