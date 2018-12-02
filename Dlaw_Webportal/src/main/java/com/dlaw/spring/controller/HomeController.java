@@ -18,7 +18,6 @@ import com.dlaw.spring.common.LanguageSelector;
 @Controller
 public class HomeController {
 
-//	HttpSession session;
 	private void init(Model model) {
 		
 		LanguageSelector.getInstance().setMenuItems(model);
