@@ -1,5 +1,7 @@
 package com.dlaw.spring.authenticator;
 
+import javax.servlet.http.HttpSession;
+
 import com.dlaw.database.dao.UserAuth;
 import com.dlaw.database.dao.impl.UserAuthImpl;
 //import com.dlaw.spring.connector.DB2Connector;
