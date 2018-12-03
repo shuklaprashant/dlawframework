@@ -1,0 +1,296 @@
+input[type="checkbox"] {
+	display: none;
+
+	+label {
+		font-size: 13px;
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid $orange;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: .6;
+			transition: all .12s, border-color .08s;
+		}
+	}
+
+	&:checked+label:before {
+		width: 10px;
+		top: -5px;
+		left: 5px;
+		border-radius: 0;
+		opacity: 1;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(45deg);
+	}
+}
+
+input[type="radio"] {
+	display: none;
+
+	+label {
+		font-size: 14px;
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid $orange;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: .6;
+			transition: all .12s, border-color .08s;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 8px;
+			height: 10px;
+			// border: 1px solid $green;
+			border-radius: 50%;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+			opacity: 0;
+			transition: all .12s, border-color .08s;
+		}
+	}
+
+	&:checked+label:before {
+		width: 20px;
+		opacity: 1;
+		border: 1px solid $orange;
+		padding: 0px;
+		// border-top-color: transparent;
+		// border-left-color: transparent;
+		transform: rotate(0deg);
+	}
+
+	&:checked+label:after {
+		width: 10px;
+		opacity: 1;
+		background-color: $orange;
+		border: 1px solid $orange;
+		padding: 0px;
+		// border-top-color: transparent;
+		// border-left-color: transparent;
+		transform: rotate(0deg);
+	}
+}
+
+.form-group {
+	margin-bottom: 8px;
+
+	label {
+		margin-bottom: 3px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	input {
+
+		&.form-control {
+			border-radius: 0px;
+			font-size: 14px;
+			height: 35px;
+			line-height: 35px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+
+			&:focus,
+			&:active {
+				box-shadow: 0 0 2rem transparentize($orange, .8);
+				border-color: $orange;
+			}
+		}
+	}
+
+	textarea {
+		border-radius: 0px;
+		&:focus,
+			&:active {
+				box-shadow: 0 0 2rem transparentize($orange, .8);
+				border-color: $orange;
+		}
+	}
+}
+
+.input-group{
+	.input-group-prepend{
+		span.input-group-text{
+			font-size: 13px;
+			border-radius: 0px;
+		}
+	}
+}
+
+.datepicker {
+	&.datepicker-dropdown {
+		padding: 10px;
+		filter: drop-shadow(0 0 5px transparentize($black, .7));
+		border-radius: 0px;
+		background-color: $grey;
+		z-index: 99999;
+
+		table {
+			tr {
+
+				td,
+				th {
+					padding: 4px 5px;
+					text-align: center;
+					cursor: pointer;
+					transition: all ease-in-out .12s;
+					font-size: 14px;
+					border-radius: 0px;
+					color: $white;
+
+					>span {
+						&.month, &.decade, &.year {
+							&.focused {
+								border-radius: 0px;
+								background-color: transparentize($black, .8);
+								color: $orange;
+								font-weight: 600;
+
+								&.active {
+									//@extend span.month.focused;
+									background-color: transparentize($black, .8);
+									background-image: linear-gradient(to bottom, $black, transparentize($black, .8));
+								}
+							}
+
+							 &.active {
+									border-radius: 0;
+									background-color: transparentize($black, .8);
+									background-image: linear-gradient(to bottom, $black, transparentize($black, .8));
+								}
+						}
+
+						&:hover {
+							border-radius: 0px;
+							background-color: transparentize($black, .8);
+							color: $orange;
+							font-weight: 600;
+						}
+
+
+					}
+
+					&.old,
+					&.new {
+						color: transparentize($title, .5);
+					}
+
+					&:hover {
+						background-color: transparentize($black, .8);
+						color: $orange;
+						font-weight: 500;
+					}
+
+					&.active {
+						background-color: $orange !important;
+						background-image: linear-gradient(to bottom, transparentize($orange, .8), $orange);
+						color: $white;
+						//filter: drop-shadow(0 0 5px transparentize($grey, .5));
+
+					}
+				}
+			}
+		}
+
+		&:before,
+		&:after {
+			border-bottom-color: $grey;
+		}
+
+		&.datepicker-orient-top {
+
+			&:before,
+			&:after {
+				border-top-color: $grey;
+			}
+
+		}
+	}
+}
+
+.bootstrap-select {
+	
+	&.dropdown{
+		filter: drop-shadow(0 0 0px transparent);
+		z-index: 999;
+	}
+	button {
+		border: 1px solid $light_grey;
+		margin-left: 0px;
+		&.dropdown-toggle {
+			&:focus {
+				//border: 1px solid $light_grey;
+				outline: 1px solid $orange !important;
+			}
+
+		}
+	}
+
+	.dropdown-menu {
+		border-radius: 0px;
+		padding: 0px;
+		&.show{
+			 filter: drop-shadow(0 0 5px transparentize($grey, .2));
+		}
+		ul.dropdown-menu {
+			li {
+				margin-bottom: 0px;
+				a {
+					font-size: 14px;
+
+					&.dropdown-item.active,
+					&.dropdown-item:active {
+						background-color: $orange !important;
+						border-color: transparent;
+
+					}
+
+					&:hover {
+						background-color: $light_grey !important;
+						//color: $white;
+					}
+				}
+			}
+		}
+	}
+}

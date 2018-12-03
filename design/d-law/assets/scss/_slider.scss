@@ -1,0 +1,52 @@
+
+.slider_section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: url(../img/banner/bg.jpg) 100% fixed;
+	height: calc(100vh - 60px);
+	position: relative;
+
+	.slider_content {
+		align-self: center;
+		z-index: 1;
+		flex-basis: 50%;
+
+
+		.slider_searchbox {
+			.tab_here {
+
+				ul.nav li a {
+					background-color: $orange,;
+					color: $white;
+					margin-bottom: 0px;
+					margin-right: 0px;
+					border-radius: 0px;
+					font-weight: 500;
+					transition: all ease-in-out .3s;
+					&.active{
+						background-color:  $orange;
+						//border-radius: 4px 4px 0 0;
+						filter: drop-shadow(0px 0px 8px transparentize($grey, .2));
+					}
+				}
+			}
+
+			.tab-content {
+				background-color: $white;
+				padding: 20px;
+				border-radius: 0px;
+			}
+		}
+    
+	}
+	.backdrop{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: transparentize($grey, .4);
+		z-index: 0;
+	}
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>D-Law : Top Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../assets/img/favicon.png">
+	<link href="../assets/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="../assets/css/style_home.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="../index.html" class="brand_logo">
+				<img src="../assets/img/favicon.png" alt="" class="logo">
+				<span class="white_txt h3">D - Law</span>
+			</a>
+			<div class="mobile_btn">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+</div>
+			<ul>
+				<li><a href="dashboard.html">Home</a></li>
+				<li class="dropdown">
+					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Watchlist</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown">
+						<a class="dropdown-item" href="watch_list.html">My Watch List</a>
+						<a class="dropdown-item" href="creat_user.html">Create / Add Watch Item </a>
+					</div>
+				</li>
+				<li class="dropdown"><a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown">
+						<a class="dropdown-item" href="case.html">Case  Coverage</a>
+						<a class="dropdown-item" href="service.html">Service Features</a>
+						<a class="dropdown-item" href="price.html">Price Plans</a>
+						<a class="dropdown-item" href="we_can.html">We Can Help</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown">
+						<a class="dropdown-item" href="change_profile.html">Change Profile</a>
+						<a class="dropdown-item" href="change_password.html">Change Password</a>
+						<a class="dropdown-item" href="declration.html">Change Subscriber's Declaration</a>
+						<a class="dropdown-item" href="top_up.html">Top-Up Account Credits</a>
+						<a class="dropdown-item" href="coupon.html">Use Coupon Code</a>
+						<a class="dropdown-item" href="transaction.html">Transaction History</a>
+						<a class="dropdown-item" href="order_status.html">Online Order Status</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown">
+						<a class="dropdown-item" href="../admin/create_user.html">Create User</a>
+						<a class="dropdown-item" href="../admin/message.html">Message Admin</a>
+						<a class="dropdown-item" href="../admin/charge.html">Charge Admin</a>
+						<a class="dropdown-item" href="../admin/user_activity.html">User Activity Log</a>
+						<a class="dropdown-item" href="../admin/user_payment.html">User Payment Log</a>
+						<a class="dropdown-item" href="../admin/user_list.html">User List</a>
+						<a class="dropdown-item" href="../admin/user_coupon.html">Web User Coupon</a>
+						<a class="dropdown-item" href="../admin/coupon_letter.html">Coupon Letter Genration</a>
+						<a class="dropdown-item" href="../admin/user_search.html">
+								User Search History
+						</a>
+						<a class="dropdown-item" href="../admin/user_profile.html">
+								Change User Profile
+							 </a>
+						<a class="dropdown-item" href="../admin/online_order_main.html">
+								Online Order Maintenance
+							 </a>
+						<a class="dropdown-item" href="../admin/order_details.html">
+								Online Order Detail
+						</a>
+					</div>
+				</li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="help.html">Help</a></li>
+				<!-- <li><a href="../login.html">Login</a></li>
+				<li><a href="../signup.html" >Sign Up</a></li> -->
+				<li><a class="orange_txt" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-sign-out-alt "></i></a></li>
+				<li><a id="google_translate_element"></a></li>
+			</ul>
+		</nav>
+		<div class="user_list">
+			<div class="user_name">
+				<div class="get_user">
+					<p class="m-b-0">
+						Good afternoon ! <strong class="black_txt"> D-Law uses</strong>
+					</p>
+				</div>
+			</div>
+			<div class="user_validity">
+				<span>
+					Credits : <strong>45</strong> <small>( Valid before 12/31/2018 )</small>
+				</span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="slide_title text-center">
+					<div class="form-group">
+						<h3 class="white_txt display-4">
+								Top Up 
+							</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="about_us">
+						
+						<div class="row m-t-20" id="pay_rate">
+							<div class="col-md-12">
+								<h5 class="m-b-10 ">Top Up Your Account</h5>
+								<p class="m-t-10">
+									<strong>Please select one of the following options that best suits your needs:</strong>
+								</p>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<p><strong>Pay As You Go</strong></p>
+									<p class="lg_txt">You pay only for what you need</p>
+								</div>
+								<div class="form-group">
+									<table class="table table-bordered table-striped">
+										<tr >
+											<th>Select</th>
+											<th> Price HKD</th>
+										</tr>
+										<tr>
+											<td>
+												<input id="d1" name="d1" type="radio" class="form-control">
+												<label for="d1"></label>
+											</td>
+											<td>
+												
+												$200 for 5 credits		
+												<small>
+													(Valid for 2 days)		*Recommended for one-off search
+												</small>
+											</td>
+										</tr>
+									</table>
+								</div>
+								  <div class="form-group">
+									  <button class="btn orange_bg m-l-0" id="next_1"> Next
+										<i class="fa fa-arrow-right"></i>
+									  </button>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<p><strong>Flat Rate</strong></p>
+									<p class="lg_txt">It gives you unlimited use for one fixed price.</p>
+								</div>
+								<div class="form-group">
+									  <table class="table table-bordered table-striped">
+										<tr>
+											<th>Select</th>
+											<th> Price (HKD)</th>
+										</tr>
+										<tr>
+											<td style="width: 80px">
+												<input id="d2" name="d2" type="radio">
+												<label  for="d2"></label>
+											</td>
+											<td>
+												$1950 for 1 month	
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="form-group">
+									  <button class="btn orange_bg m-l-0" id="next_2">Next
+										<i class="fa fa-arrow-right"></i>
+									  </button>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+							  
+							</div>
+						</div>
+					    <div class="row m-t-20" id="flat_rate">
+					    	
+							<div class="col-md-12 ">
+								<div class="form-group">
+									 <h5>Payment Summary</h5>
+								</div>
+								<table class="table table-striped table-bordered pay_table">
+									<tbody>
+										<tr>
+											<th>Payment Amount</th>
+											<th>Charge Type</th>
+											<th>Units</th>
+											<th colspan="2">Choose Payment Gateway</th>
+										<!-- 	<th></th> -->
+											<th>Action</th>
+										</tr>
+										<tr>
+											<td> $1950.0</td>
+											<td>MONTHLY</td>
+											<td>1</td>
+											<td colspan="2">
+												<input id="paypal" name="pay" type="radio">
+												<label for="paypal" class="float-left"></label>
+												<img src="../assets/img/paypal.gif" alt="" class="m-r-10">
+											<!-- </td>
+											<td> -->
+												<input id="alipay" name="pay" type="radio">
+												<label for="alipay" class="float-left"></label>
+												<img src="../assets/img/AliPay.jpg" alt="">
+											</td>
+											<td>
+												<button class="btn orange_bg btn-sm"><i class="fa fa-credit-card"></i>  Buy Now</button>
+												<button id="pay_cancel" class="btn grey_bg btn-sm"><i class="fa fa-times"></i>  Cancel</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 ">
+					<div class="row">
+						<div class="col-md-5 footer_content">
+							<span class="h6">Contact </span>
+							<p class="m-b-0 m-t-10">
+								<i class="fa fa-map-marker orange_txt"></i>
+								<strong> Address : </strong> 
+								Suite 4008, 40/F Hong Kong Plaza 188, <br />
+								Connaught Road West HongKong
+							</p>
+							<p class="m-b-5"><i class="fa fa-phone orange_txt"></i> <strong>Phone : </strong> +852 2589 4220 </p>
+							<p class="m-b-5"><i class="fa fa-fax  orange_txt"></i> <strong>Fax : </strong> +852 3007 2585</p>
+						</div>
+						<div class="col-md-3 footer_content">
+							<span class="h6">Useful Links  </span>
+							<p class="m-b-5 m-t-10"> <i class="fa fa-chevron-right orange_txt"></i><a href="disclaimer.html"> Disclaimer </a></p>
+							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i> <a href="terms.html">Terms & Conditions</a> </p>
+							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i> <a href="privacy.html">Privacy </a></p>
+
+						</div>
+						<div class="col-md-4 text-right footer_content">
+							<img src="../assets/img/favicon.png" alt="" class="logo">
+							<span class="white_txt h3">D - Law</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+		<div class="modal fade" id="next_one" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="form-group p-10 title_head">
+						<h5 class="m-b-0">Add New Customer</h5>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="">RFID Number</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="">Vechicle Year</label>
+								<select name="" id="" class="form-control select-picker">
+									<option value="">Select Year</option>
+									<option value="">1992</option>
+									<option value="">1993</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="">Vechicle Make</label>
+								<select name="" id="" class="form-control select-picker">
+									<option value="">Select Year</option>
+									<option value="">1992</option>
+									<option value="">1993</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="">Vechicle Modal</label>
+								<select name="" id="" class="form-control select-picker">
+									<option value="">Select Year</option>
+									<option value="">1992</option>
+									<option value="">1993</option>
+								</select>
+							</div>
+							<div class="form-group row">
+								<div class="col-md-4">
+									<input type="checkbox" id="prepaid">
+									<label for="prepaid">Unlimited Prepaid</label>
+								</div>
+								<div class="col-md-4">
+									<input type="checkbox" id="is_recurring">
+									<label for="is_recurring">Is Recurring</label>
+								</div>
+							</div>
+							<div class="form-group pre_service" >
+								<label for="">Select Serive</label>
+								<select name="" id="" class="form-control select-picker">
+									<option value="">Select Year</option>
+									<option value="">1992</option>
+									<option value="">1993</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-right">
+							<button class="btn blue_bg" id="assigned"><i class="mdi mdi-account-multiple-plus"></i> Assign Unlimited 
+							</button>
+							 <button class="btn blue_bg"><i class="mdi mdi-account-multiple-plus"></i> Swipe Card
+							</button>
+							<button class="btn red_bg" data-dismiss="modal" aria-hidden="true"><i class="mdi mdi mdi-close"></i> Cancel
+							</button>
+							<!--    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="mdi mdi-close-circle-outline"></i></button> -->
+						</div>
+					</div>
+				</div>
+				<!-- <div class="modal-footer">
+					
+				</div> -->
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/google_translator.js"></script>
+	<script src="../assets/js/bootstrap-select.js"></script>
+	<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+	<script src="../assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#flat_rate').hide();
+			$('#next_1').on('click', function(){
+				if($('#d1').is(':checked')){
+					$('#flat_rate, #pay_rate').slideToggle();
+				} else{
+					//alert('First check the radio button');
+				}
+				
+			});
+
+			$('#next_2').on('click', function(){
+				if($('#d2').is(':checked')){
+					$('#flat_rate, #pay_rate').slideToggle();
+				} else{
+					//alert('First check the radio button');
+				}
+				
+			})
+			$('#pay_cancel').on('click', function(){
+				$('#flat_rate, #pay_rate').slideToggle();
+			})
+		})
+	</script>
+</body>
+
+</html>

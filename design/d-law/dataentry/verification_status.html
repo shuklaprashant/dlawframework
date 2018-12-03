@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>D-Law: English Verification Status Report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../assets/img/favicon.png">
+	<link href="../assets/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="../assets/css/style_admin.css">
+	<link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+	<div class="flex_container">
+		<header>
+			<nav>
+				<div class="left">
+					<a class="btn_toggle btn-lg"><i class="fa fa-bars orange_txt"></i></a>
+					<!--<a href="../index.html" class="brand_logo">
+							<img src="../assets/img/favicon.png" alt="" class="logo">
+							<span class="white_txt h3">D - Law</span>
+						</a> -->
+				</div>
+				<ul>
+					<li class="dropdown profile">
+						<a href="#!"  id="drop_user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="../assets/img/avatar.jpg" alt="">
+						<span>Joice 1</span>
+					</a>
+					</li>
+					<li><a><i class="fa fa-sign-out-alt orange_txt"></i> </a></li>
+				</ul>
+			</nav>
+			<aside>
+				<div class="side_bar">
+					<div class="logo">
+						<a href="../index.html" class="brand_logo">
+						<img src="../assets/img/favicon.png" alt="" class="logo">
+						<span class="white_txt h3">D - Law</span>
+					 </a>
+					</div>
+					<div class="user_box">
+						<img src="../assets/img/avatar.jpg" alt="">
+						<span class="name">D-Law User</span>
+						<span class="post">Dataentry</span>
+					</div>
+					<ul class="scrollbar">
+						<li>
+							<a href="index.html">
+								<i class="fa fa-inbox"></i>
+						 		<span>Data Entry Main</span>
+						 	</a>
+						</li>
+						<li>
+							<a href="select_court.html">
+								<i class="fa fa-pencil-alt"></i> 
+								<span>English Case Data Entry</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="entry_status_report.html">
+								<i class="fa fa-battery-three-quarters"></i> 
+								<span>Data Entry Status Report </span>
+							</a>
+						</li>
+						<li>
+							<a href="company_data_entry.html">
+								<i class="fa fa-building"></i>
+								<!-- <i class="fa fa-hand-pointer"></i>  -->
+								<span>Company Data Entry</span>
+							</a>
+						</li>
+						<li>
+							<a href="verification_status.html">
+								<i class="fa fa-poll"></i> 
+								<span> Verification Status Report</span>
+							</a>
+						</li>
+						<li>
+							<a href="daily_upload_cause.html">
+								<i class="fa fa-file-upload"></i> 
+								<span>Upload Daily Cause List</span>
+							</a>
+						</li>
+						<li>
+							<a href="address_editor.html">
+								<i class="fa fa-map-marked"></i> 
+								<span>Address Editior</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</header>
+		<main>
+			<div class="container-fluid">
+				<nav aria-label="breadcrumb" class="m-t-20 m-b-2d0 white_bg breadcrumb">
+					<ol class="breadcrumb m-b-0">
+						<li class="breadcrumb-item" aria-current="page">DataEntry</li>
+						<li class="breadcrumb-item active orange_txt" aria-current="page">Verification Status Report</li>
+					</ol>
+				</nav>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="about_us white_bg p-15">
+							<div class="row">
+								<div class="col-md-6">
+									<h5 class="">Verification Status Report</h5>
+									<!-- <h5 class="">Data Entry Status Report</h5> -->
+								</div>
+								<div class="col-md-6 text-right">
+									<a href="index.html" class="purple_bg btn btn-sm"><i class="fa fa-arrow-left"></i> Back to Task list</a>
+								</div>
+							</div>
+							<div class="row m-t-20 p-t-0 p-b-0">
+								<div class="col-md-6 form-group">
+									<label for="">Court Type </label>
+									<select name="" id="court_type" class="form-control selectpicker">
+										<option value="">Select</option>
+										<option value="HCA">HCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+									</select>
+								</div>
+								<div class="col-md-6 form-group">
+									<label for="">Filing Year</label>
+									<select name="" id="filing_year" class="form-control selectpicker">
+										<option value="" selected="">Select Filing Year</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2011">2010</option>
+									</select>
+								</div>
+							</div>
+							 <div class="row">
+							 	<div class="col-md-12 p-l-10 m-t-5">
+							 		<button class="btn orange_bg m-b-20">
+							 			<i class="fa fa-globe"></i>
+									All Parties
+								</button>
+								<button class="btn purple_bg m-b-20">
+									<i class="fa fa-landmark"></i>
+									Defending Parties
+								</button>
+								<button class="btn grey_bg m-b-20">
+									<i class="fa fa-cog"></i> 
+									CDNF
+								</button>
+							 	</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+
+					<div class="row m-t-20">
+					<div class="col-md-12">
+						<div class="p-15 white_bg">
+							 <h5>Select Action No</h5>
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered">
+									<thead>
+										<tr>
+											<th>Action</th>
+											<th>Verifier 1</th>
+											<th>Verifier 2</th>
+											<th>Final Verifier</th>
+											<th>Status</th>
+											<!--<th>Estate</th>
+											<th>Street No</th>
+											<th>District</th>
+											<th>Loacation</th>
+											<th>Region</th>
+											<th>Remarks</th> -->
+										</tr>
+										<tbody>
+											<tr>
+												<!-- <td></td>
+												<td> No Address</td> -->
+												<td colspan="5"> No Item were fount here</td>
+												<!-- <td><a class="btn btn-sm grey_bg white_txt"><i class="fa fa-file-excel"></i> Export to Excel</a></td> -->
+												
+											</tr>
+										</tbody>
+									
+									</thead>
+								</table>
+							</div>
+							<div class="col-md-12 p-l-5">
+								<h6><strong>Status Key</strong> </h6>
+								 <ul class="list-unstyled">
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>EP</strong> - Entry Pending</li>
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>ER</strong> - Error (mismatch) found in entries</li>
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>PC</strong> - Pending Chinese Entry</li>
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>NR </strong>- No, Error verification completed</li>
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>AA </strong>- Alert Admin</li>
+								 	<li><i class="fa fa-hand-point-right orange_txt"></i>
+								 		<strong>PF</strong> - Pending Final Verification</li>
+
+								 </ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="d_row m-t-20">
+					<div class="col-md-12 text-center footer_content white_bg">
+						<span class=""> Copyright 2018 D-Law</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../assets/js/google_translator.js"></script>
+	<script src="../assets/js/bootstrap-select.js"></script>
+	<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+	<script src="../assets/js/admin_custom.js"></script>
+	<!-- 	// hightCharts // -->
+	<script>
+	$(document).ready(function() {
+		$('.data_nxt').on('click', function() {
+			if ($('#court_type').val() == "HCA" && $('#filing_year').val() == "2017") {
+				$('.hca, .select_court').slideToggle();
+			}
+		})
+	});
+	</script>
+</body>
+
+</html>

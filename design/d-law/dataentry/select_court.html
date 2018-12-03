@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>D-Law</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../assets/img/favicon.png">
+	<link href="../assets/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="../assets/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="../assets/css/style_admin.css">
+	<link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+	<div class="flex_container">
+		<header>
+			<nav>
+				<div class="left">
+					<a class="btn_toggle btn-lg"><i class="fa fa-bars orange_txt"></i></a>
+					<!-- 	<a href="../index.html" class="brand_logo">
+					<img src="../assets/img/favicon.png" alt="" class="logo">
+					<span class="white_txt h3">D - Law</span>
+				</a> -->
+				</div>
+				<ul>
+					<li class="dropdown profile">
+						<a href="#!"  id="drop_user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="../assets/img/avatar.jpg" alt="">
+						<span>Joice 1</span>
+					</a>
+					</li>
+					<li><a><i class="fa fa-sign-out-alt orange_txt"></i> </a></li>
+				</ul>
+			</nav>
+			<aside>
+				<div class="side_bar">
+					<div class="logo">
+						<a href="../index.html" class="brand_logo">
+						<img src="../assets/img/favicon.png" alt="" class="logo">
+						<span class="white_txt h3">D - Law</span>
+					 </a>
+					</div>
+					<div class="user_box">
+						<img src="../assets/img/avatar.jpg" alt="">
+						<span class="name">D-Law User</span>
+						<span class="post">Dataentry</span>
+					</div>
+					<ul class="scrollbar">
+						<li>
+							<a href="index.html">
+								<i class="fa fa-inbox"></i>
+						 		<span>Data Entry Main</span>
+						 	</a>
+						</li>
+						<li>
+							<a href="select_court.html">
+								<i class="fa fa-pencil-alt"></i> 
+								<span>English Case Data Entry</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="entry_status_report.html">
+								<i class="fa fa-battery-three-quarters"></i> 
+								<span>Data Entry Status Report </span>
+							</a>
+						</li>
+						<li>
+							<a href="company_data_entry.html">
+								<i class="fa fa-building"></i>
+								<!-- <i class="fa fa-hand-pointer"></i>  -->
+								<span>Company Data Entry</span>
+							</a>
+						</li>
+						<li>
+							<a href="verification_status.html">
+								<i class="fa fa-poll"></i> 
+								<span> Verification Status Report</span>
+							</a>
+						</li>
+						<li>
+							<a href="daily_upload_cause.html">
+								<i class="fa fa-file-upload"></i> 
+								<span>Upload Daily Cause List</span>
+							</a>
+						</li>
+						<li>
+							<a href="address_editor.html">
+								<i class="fa fa-map-marked"></i> 
+								<span>Address Editior</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</header>
+		<main>
+			<div class="container-fluid">
+				<nav aria-label="breadcrumb" class="m-t-20 m-b-2d0 white_bg breadcrumb">
+					<ol class="breadcrumb m-b-0">
+						<li class="breadcrumb-item" aria-current="page">DataEntry</li>
+						<li class="breadcrumb-item active orange_txt" aria-current="page">Index</li>
+					</ol>
+				</nav>
+				
+				<div class="row select_court">
+					<div class="col-md-12">
+						<div class="about_us white_bg p-15">
+							<div class="row">
+								<div class="col-md-6">
+									<h5 class="">Select Court</h5>
+								</div>
+								<div class="col-md-6 text-right">
+										<a href="index.html" class="purple_bg btn btn-sm"><i class="fa fa-arrow-left"></i> Back to Task list</a>
+								</div>
+							</div>
+							<div class="row m-t-20 p-t-0 p-b-0">
+								<div class="col-md-6 form-group">
+									<label for="">Court Type </label>
+									<select name="" id="court_type" class="form-control selectpicker">
+										<option value="">Select</option>
+										<option value="HCA">HCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+										<option value="WPCA">WPCA</option>
+									</select>
+								</div>
+								<div class="col-md-6 form-group">
+									<label for="">Filing Year</label>
+									<select name="" id="filing_year" class="form-control selectpicker">
+										<option value="" selected="">Select Filing Year</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2011">2010</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 p-l-10 m-t-10">
+									<button class="btn orange_bg m-b-20 data_nxt">
+										Next 
+									<i class="fa fa-arrow-right"></i>
+								</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row high_court"> -->
+				<div class="about_us white_bg p-15  hca" style="display: none;">
+					<br>
+					<h5>High Court Action - HCA</h5>
+					<div class="row m-t-20 p-t-0 p-b-0">
+						<div class="col-md-6 form-group">
+							<label for="">Action No </label>
+							<!-- <input type="text" class="form-control">-->
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="input">HCA</span>
+								</div>
+								<input type="text" class="form-control">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inpt">2017</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 form-group">
+							<label for="">Date of Writ Summons</label>
+							<div class="input-group">
+								<input type="text" class="datepicker form-control">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroupPrepend2">2017</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 form-group">
+							<label for="">Part 1</label>
+							<select name="" id="" class="form-control selectpicker">
+								<option value="">Select One</option>
+								<option value="">Default</option>
+								<option value="">Default</option>
+								<option value="">Default</option>
+
+							</select>
+						</div>
+
+						<div class="clearfix"></div>
+						 <div class="col-md-12">
+						 	<div class="table-responsive m-t-20">
+						 		<table class="table table-bordered table-striped" id="table_1">
+						 			<thead>
+						 				<tr>
+						 					<th>Select</th>
+						 					<th>Party Seq</th>
+						 					<th>Party Name</th>
+						 					<th>Party Address</th>
+						 					<th>Solicitor</th>
+						 					<th>Solicitor Address</th>
+						 				</tr>
+						 			</thead>
+						 			<tbody>
+						 				<tr class="add_action">
+						 					<td colspan="6">No Party</td>
+						 				</tr>
+						 			</tbody>
+						 		</table>
+						 	</div>
+						 	<div class="form-group">
+						 		<button class="btn btn-sm orange_bg" id="addition"><i class="fa fa-plus"></i> Add</button>
+						 		<button class="btn btn-sm grey_bg"><i class="fa fa-times"></i> Delete</button>
+						 	</div>
+						 	<div class="form-group m-t-20">
+						 		<div class="row">
+							 		<div class="col-md-6">
+								 		<label for="">Party 2 </label>
+								 		<select name="" id="" class="form-control selectpicker">
+											<option value="">Select One</option>
+											<option value="">Default</option>
+											<option value="">Default</option>
+											<option value="">Default</option>
+										</select>
+							 			
+							 		</div>
+						 			
+						 		</div>
+							</div>	
+
+							<div class="table-responsive m-t-20">
+						 		<table class="table table-bordered table-striped" id="table_2">
+						 			<thead>
+						 				<tr>
+						 					<th>Select</th>
+						 					<th>Party Seq</th>
+						 					<th>Party Name</th>
+						 					<th>Party Address</th>
+						 					<th>Solicitor</th>
+						 					<th>Solicitor Address</th>
+						 				</tr>
+						 			</thead>
+						 			<tbody>
+						 				<tr class="add_action">
+						 					<td colspan="6">No Party</td>
+						 				</tr>
+						 			</tbody>
+						 		</table>
+						 	</div>
+						 	<div class="form-group">
+						 		<button class="btn btn-sm orange_bg" id="add_tbl2"><i class="fa fa-plus"></i> Add</button>
+						 		<button class="btn btn-sm grey_bg"><i class="fa fa-times"></i> Delete</button>
+						 	</div>	
+
+
+						 	<div class="row m-t-20">
+							 	<div class="col-md-6 form-group">
+									<label for="">Particular of Claim</label>
+								    <input type="text" class="form-control">
+									
+								</div>
+								<div class="col-md-6 form-group">
+									<label for="">Claim Amount</label>
+									<div class="row">
+										<div class="col-md-4">
+											<select name="" id="" class="form-control selectpicker">
+												<option selected="" value="">select</option>
+												<option value="">select</option>
+												<option value="">select</option>
+												<option value="">select</option>
+											</select>	
+										</div>
+										<div class="col-md-8">
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 form-group">
+									<label for="">Remarks</label>
+									 <input type="text" class="form-control">
+								</div>
+							<!-- 	<div class="col-md-6 form-group">
+									<label for="">Chinese</label>
+									<div class="row">
+										<div class="col-md-4">
+											 <input type="radio" name="chinese" id="c1">
+											 <label for="c1">Yes</label>
+											
+										</div>
+										<div class="col-md-4">
+											 <input type="radio" name="chinese" id="c2">
+											 <label for="c2">No</label>
+											
+										</div>
+									</div>
+									
+								</div> -->
+
+								<div class="col-md-12 form-group p-l-10">
+									<button class="btn orange_bg"><i class="fa fa-save"></i> Submit</button>
+								</div>
+						 	</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="d_row m-t-20">
+					<div class="col-md-12 text-center footer_content white_bg">
+						<span class=""> Copyright 2018 D-Law</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- <div id="add_modal" class="modal fade bs-example-modal-lg "" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title">Party Address Editior</h4>
+					<button type="button" class="close grey_txt" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Flat</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Floor</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Block</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Building</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Estate</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Street No</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Street Name</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Location</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">District</label>
+								<input type="text" class="form-control"/>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">Region</label>
+								<select name="" id="" class="form-control selectpicker">
+									<option value="">select</option>
+									<option value="">Default</option>
+									<option value="">Default</option>
+									<option value="">Default</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="">Remark</label>
+								<textarea class="form-control"></textarea>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn orange_bg waves-effect waves-light"><i class="fa fa-plus"></i> Add</button>
+					<button type="button" class="btn grey_bg waves-effect waves-light"><i class="fa fa-save"></i> Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
+		
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="../assets/js/google_translator.js"></script>
+	<script src="../assets/js/bootstrap-select.js"></script>
+	<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+	<script src="../assets/js/admin_custom.js"></script>
+	<!-- 	// hightCharts // -->
+	<script>
+	$(document).ready(function() {
+		$(document).on('change', '#court_type', function() {
+			if ($(this).val() == "HCA") {
+
+			}
+
+		})
+		$('.data_nxt').on('click', function() {
+			if ($('#court_type').val() == "HCA" && $('#filing_year').val() == "2017") {
+				$('.hca, .select_court').slideToggle();
+			}
+		})
+
+		$('#addition').on('click', function(){
+			 var content = "<td><input type='radio' id='d1'><label for='d1'></label></td><td> 1 </td><td class='form-group'><textarea class='form-control'></textarea></td><td class='form-group'><textarea class='form-control'></textarea> <a class='orange_txt' href='address_editor.html'>Add</a></td><td class='form-group'><textarea class='form-control'></textarea></td></td><td class='form-group'><textarea class='form-control'></textarea><a class='orange_txt' data-toggle='modal' href='#edit_modal'>Add / Edit</a></td>";
+			 $('#table_1 .add_action').html(content);
+		})
+
+		$('#add_tbl2').on('click', function(){
+			  var content = "<td><input type='radio' id='d1'><label for='d1'></label></td><td> 1 </td><td class='form-group'><textarea class='form-control'></textarea></td><td class='form-group'><textarea class='form-control'></textarea> <a class='orange_txt' href='address_editor.html'>Add</a></td><td class='form-group'><textarea class='form-control'></textarea></td></td><td class='form-group'><textarea class='form-control'></textarea><a class='orange_txt' data-toggle='modal' href='#edit_modal'>Add / Edit</a></td>";
+			 $('#table_1 .add_action').html(content);
+		})
+	});
+	</script>
+</body>
+
+</html>

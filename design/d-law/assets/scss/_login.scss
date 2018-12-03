@@ -1,0 +1,186 @@
+.login_page {
+	background: url(../img/banner/bg.jpg) 100% fixed;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.container {
+		z-index: 1;
+
+		&.login {
+			display: flex;
+			justify-content: center;
+
+			.login_content {
+				//width: 80%;
+				flex-basis: 80%;
+				justify-content: space-around;
+
+				.half_one {
+					flex-basis: 40%
+				}
+			}
+		}
+
+	}
+
+
+	.login_content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		background-color: transparentize($white, .2);
+		padding: 30px 20px;
+		justify-content: space-evenly;
+		.half_one {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			flex-basis: 35%;
+			position: relative;
+
+			.h2{
+				margin-bottom: 0;
+			}
+
+			&:last-child {
+				&:before {
+					position: absolute;
+					content: "";
+					left: -60px;
+					height: 100%;
+					width: 2px;
+					border-right: 1px solid $light_grey;
+				}
+
+			}
+
+			//color: $white;
+		}
+
+		.one_third {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			flex: 1;
+			position: relative;
+		}
+
+		.third_one {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			flex: 2;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				content: "";
+				left: -20px;
+				height: 100%;
+				width: 2px;
+				border-right: 1px solid $light_grey;
+			}
+		}
+	}
+
+
+	.backdrop {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: transparentize($black, .4);
+		z-index: 0;
+	}
+}
+
+
+
+
+@media only screen and (max-width : 767px) {
+
+
+	.login_page {
+		height: auto;
+		padding: 20px 0;
+		min-height: 100vh;
+
+		h2 {
+			font-size: 1rem !important;
+		}
+
+		.login_content {
+			flex-direction: column;
+
+			.half_one {
+				.col-md-6 {
+					&.text-right {
+						text-align: left !important;
+						margin: 10px 0 10px;
+					}
+				}
+
+				&:last-child {
+					padding-top: 2rem;
+
+					&:before {
+						left: auto;
+						height: 5px;
+						width: 100%;
+						border-top: 1px solid $light_grey;
+						top: 0px;
+						z-index: 999;
+						border-right: 0px solid transparent;
+
+					}
+				}
+			}
+		}
+
+		// Login Section //
+		.container {
+			&.login {
+
+				.login_content {
+					//width: 80%;
+				   flex-basis: 90%;
+					// justify-content: space-between;
+					// flex-direction: column;
+
+					.half_one {
+						flex-basis: auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (min-width : 768px )  and (max-width: 1024px) {
+
+	.login_page{
+		.container{
+			max-width: 100%;
+			.login_content{
+
+				//align-items: stretch;
+			}
+			&.login{
+
+				.login_content{
+					 flex-basis: 100%;
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,225 @@
+.user_list {
+    //background-color: transparent;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    rigth: 0px;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .user_name {
+        flex: 2;
+
+        .get_user {
+            display: inline-flex;
+            position: relative;
+            background-color: $orange;
+            padding: 5px 20px;
+            align-items: center;
+            height: 40px;
+
+            p {
+                color: $white;
+
+                span {}
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: -20px;
+                top: 0;
+                height: 40px;
+                width: 55px;
+                background-color: $orange;
+                transform: skew(-36deg);
+                z-index: -1;
+
+            }
+        }
+    }
+
+    .user_validity {
+        display: inline-flex;
+        position: relative;
+        background-color: $purple;
+        padding: 5px 20px;
+        align-items: center;
+        height: 40px;
+        color: $white;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 0;
+            height: 40px;
+            width: 55px;
+            background-color: $purple;
+            transform: skew(36deg);
+            z-index: -1;
+
+        }
+    }
+}
+
+.pay_table {
+    td {
+        vertical-align: middle;
+
+        label {
+            top: 10px;
+        }
+
+        img {
+            max-height: 45px;
+            float: left;
+            margin-top: -5px;
+        }
+
+    }
+}
+
+.contact_type {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    span {
+        min-width: 50px;
+        padding: 15px 0;
+        border-radius: 50%;
+        background-color: $orange;
+        text-align: center;
+
+        i {
+            font-size: 1.2rem;
+            color: $white;
+        }
+    }
+
+    >.contact_list {
+        padding-left: 20px;
+
+        h6 {
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.service {
+
+    .col-md-6,
+    .col-md-12 {
+        display: flex;
+
+        // align-content: center;
+        .tiles {
+            display: flex;
+            flex: 1 1 auto;
+            //flex-direction: column;
+            background-color: transparentize($light_grey, .4);
+            padding: 20px;
+            align-items: center;
+            margin-bottom: 10px;
+
+            span {
+                background-color: $orange;
+                min-width: 60px;
+                padding: 15px 0;
+                text-align: center;
+                border-radius: 50%;
+                // display: inline-flex;
+                // align-items: center;
+
+                i {
+                    font-size: 2rem;
+                    color: $white;
+                    margin-bottom: 0px;
+                }
+            }
+
+            >div {
+                padding-left: 20px;
+
+                h5 {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+        }
+
+        &:last-child {
+            border-left: 1px solid $white;
+        }
+    }
+
+}
+
+// h6{
+// 	font-weight: 600;
+// }
+
+
+@media only screen and (max-width: 768px) {
+    .user_list {
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        align-items: stretch;
+        height: auto;
+        text-align: center;
+
+        .user_name,
+        .user_validity {
+            display: flex;
+            justify-content: center;
+
+
+            >.get_user {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                &:after{
+                	content: none;
+                }
+            }
+             &:after{
+                	content: none;
+                }
+        }
+    }
+   
+    .slider_section {
+        .slider_content{
+           flex-basis: 80%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .slider_section {
+        .slider_content{
+           flex-basis: 80%;
+        }
+    }
+
+}
