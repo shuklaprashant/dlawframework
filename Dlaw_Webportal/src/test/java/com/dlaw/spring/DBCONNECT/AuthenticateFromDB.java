@@ -1,5 +1,5 @@
 package com.dlaw.spring.DBCONNECT;
-//
+
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.context.annotation.ComponentScan;
@@ -10,12 +10,11 @@ package com.dlaw.spring.DBCONNECT;
 //@SpringBootApplication
 public class AuthenticateFromDB {
 	
-//	@Autowired
-//	private static WebUserRepository webUserRepo;
-//	
-//	public static void main(String args[]) {
-//		
-//		System.out.println(webUserRepo);
-//	}
+	
+	
+	public static void main(String args[]) {
+	
+		
+	}
 
 }

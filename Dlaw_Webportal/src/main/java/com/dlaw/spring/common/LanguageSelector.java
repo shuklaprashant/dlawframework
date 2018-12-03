@@ -4,8 +4,8 @@ import org.springframework.ui.Model;
 
 public class LanguageSelector {
 	
-	private String defaultLang = "en";
-	private String currentLang;
+	private static String defaultLang = "en";
+	private static String currentLang;
 	private static LanguageSelector langSelector = null;
 	
 	
@@ -20,6 +20,7 @@ public class LanguageSelector {
 		if(langSelector == null) {
 			
 			langSelector = new LanguageSelector();
+			currentLang = defaultLang;
 			
 		}
 		
@@ -36,6 +37,6 @@ public class LanguageSelector {
 		model.addAttribute("menuContactUs", "Contact Us");
 		model.addAttribute("menuHelp", "Help");
 		model.addAttribute("menuLogout", "Logout");
-		
+		model.addAttribute("currentLang",currentLang);
 	}
 }
