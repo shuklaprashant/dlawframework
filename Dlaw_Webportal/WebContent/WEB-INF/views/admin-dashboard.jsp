@@ -5,15 +5,15 @@
 	<title>D-Law</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="../assets/img/favicon.png">
-	<link href="../assets/font-awesome/css/regular.css" rel="stylesheet">
-	<link href="../assets/font-awesome/css/solid.css" rel="stylesheet">
-	<link href="../assets/font-awesome/css/fontawesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/css/bootstrap-select.css">
-	<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.css">
-	<link rel="stylesheet" href="../assets/css/style_admin.css">
-	<link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-select.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style_admin.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 				<div class="left">
 					<a class="btn_toggle btn-lg"><i class="fa fa-bars orange_txt"></i></a>
 					<!-- 	<a href="../index.html" class="brand_logo">
-					<img src="../assets/img/favicon.png" alt="" class="logo">
+					<img src="${pageContext.request.contextPath}/resources/img/favicon.png" alt="" class="logo">
 					<span class="white_txt h3">D - Law</span>
 				</a> -->
 				</div>
@@ -61,7 +61,7 @@
 						</a>
 							<a class="dropdown-item" href="#!">
 							<span>
-								<img src="../assets/img/avatar.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/img/avatar.jpg" alt="">
 							</span>
 							<div class="txt">
 								<strong>John Doe</strong>
@@ -75,7 +75,7 @@
 						</a>
 							<a class="dropdown-item" href="#!">
 							<span>
-								<img src="../assets/img/avatar.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/img/avatar.jpg" alt="">
 							</span>
 
 							<div class="txt">
@@ -93,13 +93,13 @@
 					<li><a id="google_translate_element"></a></li>
 					<li class="dropdown profile">
 						<a href="#!" class="dropdown-toggle" id="drop_user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<img src="../assets/img/avatar.jpg" alt="">
+						<img src="${pageContext.request.contextPath}/resources/img/avatar.jpg" alt="">
 						<span>D-Law User</span>
 					</a>
 						<div class="dropdown-menu" aria-labelledby="drop_user">
 							<a class="dropdown-item" href="user_profile.html"><i class="fa fa-user"></i> My Profile</a>
 							<a class="dropdown-item" href="#!"><i class="fa fa-envelope-open"></i> Messages</a>
-							<a class="dropdown-item" href="#!"><i class="fa fa-sign-out-alt"></i> Logout</a>
+							<a class="dropdown-item" href="${pageContext.request.contextPath}/logout"><i class="fa fa-sign-out-alt"></i> Logout</a>
 							<!-- <a class="dropdown-item" href="we_can.html">We Can Help</a> -->
 						</div>
 					</li>
@@ -109,12 +109,12 @@
 				<div class="side_bar">
 					<div class="logo">
 						<a href="../index.html" class="brand_logo">
-						<img src="../assets/img/favicon.png" alt="" class="logo">
+						<img src="${pageContext.request.contextPath}/resources/img/favicon.png" alt="" class="logo">
 						<span class="white_txt h3">D - Law</span>
 					 </a>
 					</div>
 					<div class="user_box">
-						<img src="../assets/img/avatar.jpg" alt="">
+						<img src="${pageContext.request.contextPath}/resources/img/avatar.jpg" alt="">
 						<span class="name">D-Law User</span>
 						<span class="post">Admin</span>
 					</div>
@@ -285,14 +285,14 @@
 			</div>
 		</footer>
 	</div>
-	<script src="../assets/js/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="../assets/js/bootstrap.min.js"></script>
-	<script src="../assets/js/jquery.mCustomScrollbar.min.js"></script>
-	<script src="../assets/js/google_translator.js"></script>
-	<script src="../assets/js/bootstrap-select.js"></script>
-	<script src="../assets/js/bootstrap-datetimepicker.js"></script>
-	<script src="../assets/js/admin_custom.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/google_translator.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-select.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-datetimepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/admin_custom.js"></script>
 	<!-- 	// hightCharts // -->
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/series-label.js"></script>

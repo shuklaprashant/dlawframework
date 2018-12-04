@@ -16,7 +16,7 @@ public class AuthenticationService {
 	
 	public boolean verifyUser(WebUser webuser) {
 		
-		parseUser(webuser);
+//		parseUser(webuser);
 		
 		UserAuth userAuth = new UserAuthImpl();
 		return userAuth.verifyUser(webuser);

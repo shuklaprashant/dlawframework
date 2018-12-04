@@ -5,14 +5,14 @@
 	<title> Signup Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="assets/img/favicon.png">
-	<link href="assets/font-awesome/css/regular.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/solid.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
-	<link rel="stylesheet" href="assets/css/style_home.css">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-select.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style_home.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 				<div class="one_third text-center">
 					<h4>Welcome to <span class="h3"> Signup Page</span></h4>
 					<div class="form-group m-t-10">
-						<img src="assets/img/favicon.png" style="max-width: auto;">
+						<img src="${pageContext.request.contextPath}/resources/img/favicon.png" style="max-width: auto;">
 						<span class="h2">D-Law</span>
 					</div>
 					<div class="form-group">
@@ -172,13 +172,13 @@
 			</div>
 		</div>
 	</div>
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/google_translator.js"></script>
-	<script src="assets/js/bootstrap-select.js"></script>
-	<script src="assets/js/bootstrap-datetimepicker.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/google_translator.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-select.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-datetimepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 </body>
 
 </html>

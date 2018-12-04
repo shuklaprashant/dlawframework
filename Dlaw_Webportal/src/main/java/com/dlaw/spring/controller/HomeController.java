@@ -41,6 +41,7 @@ public class HomeController {
 		
 		return "welcome";
 	}
+	
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public String logout(Locale locale, Model model, HttpSession session) {
 		
@@ -73,11 +74,11 @@ public class HomeController {
 			System.out.println("login:"+session.getId());
 			System.out.println("user verified");
 			
-			return "searchTask";
+			return "admin-dashboard";
 		}
 		
 		System.out.println("Credentials Invalid");
-		return "welcome";
+		return "userlogin";
 	}
 	
 }

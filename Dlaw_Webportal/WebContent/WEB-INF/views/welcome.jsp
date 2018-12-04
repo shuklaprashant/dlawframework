@@ -3,208 +3,445 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
 
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/welcome_page.css" type="text/css"/>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/richface.css" type="text/css"/>
-	
-	<script type="text/javascript">
-	console.log("HELLO" + " ${pageContext.request.contextPath}/resources/css/welcome_page.css "+ "World");
-	</script>
-
+	<title>D-Law</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-select.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style_home.css">
 </head>
 
-<!--
-<script type="text/javascript" src="${pageContext.request.contextPath}/keepAlive.jsp">
-</script>
--->
-
 <body>
-	
-	<div id="container" align="center" class="container">
-		<div id="topbar" class="topbar">
-        
-            <%@include file="mainTemplate.header.jsp" %>
-            
-            <%@include file="mainTemplate.menu.jsp" %>                   
-            
-            
-            <div id="mid" class="mid_full">
-                <div id="mainTemplate:content" class="content" align="left"><ul></ul>
-                    <div id="mainTemplate:leftPanel:content1" class="content2" style="position:relative; background: rgb(255, 255, 255) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
-                        <div id="mainTemplate:leftPanel:_id49" align="center">
-                            <div style="margin-top:35px"></div><span style="font-size:20.0px; font-family:Arial;">Instant Background Check </span><span style="font-size:20.0px; color:rgb(110,110,110); font-family:Arial;">- Fast and Reliable</span><div style="margin-top:10px"></div>
-                        </div>
-                        
-                        <div id="mainTemplate:leftPanel:_id54" class="context" align="left"><form id="mainTemplate:leftPanel:form2" name="mainTemplate:leftPanel:form2" style="margin:0px" onkeypress="return _submitOnEnter(event,'mainTemplate:leftPanel:form2','mainTemplate:leftPanel:easysearchbtn');" method="POST" action="/DLawPortal/faces/login.jspx">
-                            <div id="mainTemplate:leftPanel:_id55" class="container-search-module" align="left"><span id="mainTemplate:leftPanel:_id56" style="padding: 1px;">
-                                <table class="af_showOneTab_orientation-top" style="padding: 1px;" cellpadding="0" cellspacing="0" border="0" width="100%" summary="">
-                                    <tbody>
-                                        <tr>
-                                            <td class="af_showOneTab_cell-start"><b style="margin-left:0px"></b></td><td height="1" nowrap="" class="af_showOneTab_tab-selected"><a id="mainTemplate:leftPanel:_id57" name="mainTemplate:leftPanel:_id57" onclick="_submitPartialChange('mainTemplate:leftPanel:form2',0,{partialTargets:'mainTemplate:leftPanel:_id56',event:'show',source:'mainTemplate:leftPanel:_id57'});return false" href="#">All Search</a></td><td class="af_showOneTab_separator-after-selected"><b style="margin-left:0px"></b></td>
-                                            <td height="1" nowrap="" class="af_showOneTab_tab"><a id="mainTemplate:leftPanel:_id66" name="mainTemplate:leftPanel:_id66" onclick="_submitPartialChange('mainTemplate:leftPanel:form2',0,{partialTargets:'mainTemplate:leftPanel:_id56',event:'show',source:'mainTemplate:leftPanel:_id66'});return false" href="#">Company Search</a></td>
-                                            <td class="af_showOneTab_separator"><b style="margin-left:0px"></b></td>
-                                            <td height="1" nowrap="" class="af_showOneTab_tab"><a id="mainTemplate:leftPanel:_id76" name="mainTemplate:leftPanel:_id76" onclick="_submitPartialChange('mainTemplate:leftPanel:form2',0,{partialTargets:'mainTemplate:leftPanel:_id56',event:'show',source:'mainTemplate:leftPanel:_id76'});return false" href="#">People Search</a></td>
-                                            <td class="af_showOneTab_separator"><b style="margin-left:0px"></b></td>
-                                            <td height="1" nowrap="" class="af_showOneTab_tab"><a id="mainTemplate:leftPanel:_id125" name="mainTemplate:leftPanel:_id125" onclick="_submitPartialChange('mainTemplate:leftPanel:form2',0,{partialTargets:'mainTemplate:leftPanel:_id56',event:'show',source:'mainTemplate:leftPanel:_id125'});return false" href="#">Address Search</a></td>
-                                            <td class="af_showOneTab_cell-end"><b style="margin-left:0px"></b></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="af_showOneTab_body">
-                                    <div style="margin-top:5px"></div>
-                                    <div id="mainTemplate:leftPanel:_id59" class="container-search-module-border" align="left">
-                                        <div><input id="mainTemplate:leftPanel:p_party_name" type="text" name="mainTemplate:leftPanel:p_party_name" style="width:98%;"/>
-                                        </div>
-                                        <table cellpadding="0" cellspacing="0" border="0" summary="" id="mainTemplate:leftPanel:panelHorizontal4" style="position:relative;z-index:1;">
-                                            <tbody>
-                                                <tr>
-                                                    <td><span style="font-size:11px; vertical-align:bottom;">e.g. Chan Tai Man</span></td>
-                                                    <td><span style="font-size:11px; vertical-align:bottom;">&nbsp; or &nbsp;</span></td>
-                                                    <td><span style="font-size:11px; vertical-align:bottom;">ABC Company</span></td>
-                                                    <td><span style="font-size:11px; vertical-align:bottom;">&nbsp; or &nbsp;</span></td>
-                                                    <td><span style="font-size:11px; vertical-align:bottom;">HCA1234/2009</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                </span></div>
-                            <div style="margin-top:10px"></div>
-                            <div id="mainTemplate:leftPanel:_id177" style="width=90%;" align="right"><input id="mainTemplate:leftPanel:easysearchbtn" name="mainTemplate:leftPanel:easysearchbtn" type="submit" value="Search" onclick="submitForm('mainTemplate:leftPanel:form2',1,{source:'mainTemplate:leftPanel:easysearchbtn'});return false;"></div>
-                            <p class="body_text" style="padding:18px;padding-left:0px;border-color:black; border:0px;font-size:13px;text-align:justify;">D-Law offers a new approach for running background check by bringing over 2 million litigation records from main courts of Hong Kong to your fingertips <a href="/DLawPortal/faces/aboutUs.jspx">and more...</a></p>
-                            
-                        <input type="hidden" name="oracle.adf.faces.FORM" value="mainTemplate:leftPanel:form2"><span id="_mainTemplate:leftPanel:form2_Postscript"><input type="hidden" name="oracle.adf.faces.STATE_TOKEN" value="4"><input type="hidden" name="event"><input type="hidden" name="partialTargets"><input type="hidden" name="source"><input type="hidden" name="partial"><script>var _resetmainTemplate_leftPanel_form2Names=["event","partialTargets","source","partial"];</script><script>function _mainTemplate_leftPanel_form2Validator(){return true;}var mainTemplate_leftPanel_form2_SF={};</script></span><script>_submitFormCheck();</script></form></div></div>
-                <div id="mainTemplate:leftPanel:_id179" style="floated:left;"><br style="line-height:10px;">
-                    <table border="0" width="892px">
-                       <tbody><tr>
-                          <td valign="top" width="24%">
-                             <table border="0">
-                                <tbody><tr>
-                                   <td valign="top"><a href="./news.jsp"><img src="${pageContext.request.contextPath}/resources/images/news.gif"></a></td>
-                                 </tr>
-                                 <tr>
-                                   <td style="padding-top:10px;"><b style="line-height:100%;font-size:12.0px;color:#f58220;text-align:left;">What's new?</b><br></td>
-                                 </tr>
-                                 <tr>
-                                 <td style="height:3px;">
-                                 </td>
-                                 </tr>
-                                 <tr>
-                                   <td valign="top">                  
-                                      <div style="text-align:left; font-size:10.0px;"> <b>Effective from the 1st April 2018</b>, there will be an adjustment to the subscription fees. 
-                    Please contact our customer service representative at (852) 2589 4220 for more details.
 
-                                      </div>
-                                   </td>			   
-                                </tr>
-                             </tbody></table>
-                          </td>
-                          <td width="20">
-                          </td><td valign="top" width="24%">
-                             <table border="0">
-                                <tbody><tr>
-                                   <td valign="top"><a href="./legal.jsp"><img src="${pageContext.request.contextPath}/resources/images/Legal.jpg"></a></td>
-                                 </tr>
-                                 <tr>
-                                   <td style="padding-top:10px;"><b style="line-height:100%;font-size:12.0px;color:#f58220;text-align:left;">Legal professionals</b><br></td>
-                                 </tr>
-                                 <tr>
-                                 <td style="height:3px;">
-                                 </td>
-                                 </tr>
-                                 <tr>
-                                   <td valign="top">                  
-                                      <div style="text-align:left; font-size:10.0px;">Research with clarity - access relevant and related litigation records as well as receive updates on subject movements, <a style="text-align:left; font-size:10.0px;" href="./legal.jsp">and more...</a>
-                                      </div>
-                                   </td>			   
-                                </tr>
-                             </tbody></table>
-                          </td>      
-                          <td width="20">
-                          </td>
-                          <td valign="top" width="24%">
-                             <table border="0">
-                                <tbody><tr>
-                                   <td valign="top"><a href="./banking.jsp"><img src="${pageContext.request.contextPath}/resources/images/Banking&amp;Finance.jpg"></a>
-                                   </td>
-                                 </tr>
-                                 <tr>
-                                   <td style="padding-top:10px;"><b style="line-height:100%;font-size:12.0px;color:#f58220;text-align:left;">Banking &amp; Finance Professionals</b></td>
-                                 </tr>
-                                 <tr>
-                                 <td style="height:3px;">
-                                 </td>
-                                 </tr>
-                                 <tr>
-                                   <td valign="top">                  
-                                      <div style="text-align:left; font-size:10.0px;">Evaluate with clarity - identify high-risk credit applications, multiple claim activities, list of bankruptcies, <a style="text-align:left; font-size:10.0px;" href="./banking.jsp">and more...</a>
-                                      </div>
-                                   </td>			   
-                                </tr>
-                             </tbody></table>
-                          </td>      
-                          <td width="20">
-                          </td><td valign="top" width="24%">
-                             <table border="0">
-                                <tbody><tr>
-                                   <td valign="top"><a href="./corp.jsp"><img src="${pageContext.request.contextPath}/resources/images/Coroporate&amp;Business.jpg"></a></td>
-                                 </tr>
-                                 <tr>
-                                   <td style="padding-top:10px;"><b style="line-height:100%;font-size:12.0px;color:#f58220;text-align:left;">Corporate &amp; Business Professionals</b><br></td>
-                                 </tr>
-                                 <tr>
-                                 <td style="height:3px;">
-                                 </td>
-                                 </tr>
-                                 <tr>
-                                   <td valign="top">                  
-                                      <div style="text-align:left; font-size:10.0px;">Change with clarity - learn more about potential employees, vendors and business partners, <a style="text-align:left; font-size:10.0px;" href="./corp.jsp">and more...</a>
-                                      </div>
-                                   </td>			   
-                                </tr>
-                             </tbody></table>
-                          </td>
-                       </tr>
-                    </tbody></table></div></div><div id="mainTemplate:nav" class="nav"><div id="mainTemplate:rightPanel:search" align="left"><img src="${pageContext.request.contextPath}/resources/images/login_box.jpg" style="position:relative;float:left;top:30px;left:5px;">
-                    
-                    <form id="mainTemplate:rightPanel:loginTemplate:form1" name="mainTemplate:rightPanel:loginTemplate:form1" style="position:relative; top:-180px; float:left; left:30px;;margin:0px" onkeypress="return _submitOnEnter(event,'mainTemplate:rightPanel:loginTemplate:form1');" method="POST" action="login">
-                        <div id="mainTemplate:rightPanel:loginTemplate:_id182">
-                            <input type="hidden" id="j_username" name="username" value="">
-                            <input type="hidden" id="j_password" name="password" value="">
-                            <span style="font-size:18px;font-weight:bold;color:#6b6b6b;">Login</span>
-                            <div style="margin-top:5px"></div><table>
-                    <tbody>
-                    <tr>
-                    <td><span style="font-size:12px;">User ID:</span></td>
-                    <td><div style="margin-top:5px"></div></td>
-                    </tr>
-                    <tr>
-                    <td><input id="mainTemplate:rightPanel:loginTemplate:j_username_input" type="text" name="username" onkeydown="javascript:copyLoginInfoEvent();" size="8" style="font-family:Arial;box-shadow: 1px 1px 1px #f58220;width:200px;"></td>
-                    <td><div style="margin-top:5px"></div></td>
-                    </tr>
-                    <tr>
-                    <td><div id="mainTemplate:rightPanel:loginTemplate:_id190" style="padding-top:5px;"><span style="font-size:12px;">Password:</span></div></td>
-                    <td><div style="margin-top:5px"></div></td>
-                    </tr>
-                    <tr>
-                    <td><input id="mainTemplate:rightPanel:loginTemplate:j_password_input" type="password" name="password" onkeydown="javascript:copyLoginInfoEvent();" size="8" style="font-family:Arial;box-shadow: 1px 1px 1px #f58220;width:200px;"></td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <div id="mainTemplate:rightPanel:loginTemplate:_id193"></div><div style="margin-top:5px"></div><div id="mainTemplate:rightPanel:loginTemplate:_id195"><table>
-                    <tbody>
-                    <tr>
-                    <td><input id="mainTemplate:rightPanel:loginTemplate:go" name="mainTemplate:rightPanel:loginTemplate:go" type="submit" value="Login" onclick="return _chain('javascript:copyLoginInfo();','submitForm(\'mainTemplate:rightPanel:loginTemplate:form1\',1,{source:\'mainTemplate:rightPanel:loginTemplate:go\'});return false;',this,event,true)" class="rbutton_login"></td>
-                    <td><div id="mainTemplate:rightPanel:loginTemplate:_id197" style="padding-left:45px;padding-bottom:8px;"><input type="checkbox" name="_acegi_security_remember_me" style="position:relative; top:3px;box-shadow: 1px 1px 1px #f58220;"><span style="font-size:10px;">Remember Me</span></div></td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    </div><div style="margin-top:5px"></div><div id="mainTemplate:rightPanel:loginTemplate:_id201" style="float:left; position:relative"><a onclick="submitForm('mainTemplate:rightPanel:loginTemplate:form1',1,{source:'mainTemplate:rightPanel:loginTemplate:_id202'});return false;" class="OraLink" style="font-size:10px;color:#E12D2D;float:left;position:relative;text-decoration: none;" href="#">Register NOW</a><br><a onclick="submitForm('mainTemplate:rightPanel:loginTemplate:form1',1,{source:'mainTemplate:rightPanel:loginTemplate:_id204'});return false;" class="OraLink" style="font-size:10px;color:#545454;float:left;position:relative;text-decoration: none;" href="#">Forgot Password</a><br><a onclick="submitForm('mainTemplate:rightPanel:loginTemplate:form1',1,{source:'mainTemplate:rightPanel:loginTemplate:_id206'});return false;" class="OraLink" style="font-size:10px;color:#545454;float:left;position:relative;text-decoration: none;" href="#">Resend Activation Email</a><span style="font-size:12px;color:red;float:left;position:relative;top:25px;left:-46px"></span></div></div><input type="hidden" name="oracle.adf.faces.FORM" value="mainTemplate:rightPanel:loginTemplate:form1"><span id="_mainTemplate:rightPanel:loginTemplate:form1_Postscript"><input type="hidden" name="oracle.adf.faces.STATE_TOKEN" value="4"><input type="hidden" name="source"><script>var _resetmainTemplate_rightPanel_loginTemplate_form1Names=["source"];</script><script>function _mainTemplate_rightPanel_loginTemplate_form1Validator(){return true;}var mainTemplate_rightPanel_loginTemplate_form1_SF={};</script></span><script>_submitFormCheck();</script></form></div></div></div>
+    	
+    <%@include file="/resources/mainHeader.jsp" %>
+      
+	<main>
+		<div class="slider_section">
+					<div class="backdrop"></div>
+					<div class="slider_content text-center">
+						<div class="container-fluid">
+							
+						<div class="row mb-3">
+							<div class="col-md-12">
+								<h2 class="white_txt display-3">Legal Search In One Click</h2>
+								<h1 class="white_txt">
+										<span>Quick</span>
+										<span>Easy</span>
+										<span>Reliable</span>
+								 </h1>
+							</div>
+						</div>
+						</div>
+						<div class="slider_searchbox">
+							<div class="tab_here mb-3">
+							
+								<ul class="nav nav-pills" id="pills-tab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="all_search-tab" data-toggle="pill" href="#all_search" role="tab" aria-controls="all_search" aria-selected="true">All Search</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="company_search-tab" data-toggle="pill" href="#company_search" role="tab" aria-controls="company_search" aria-selected="false">Company Search</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="people_search-tab" data-toggle="pill" href="#people_search" role="tab" aria-controls="people_search" aria-selected="false">People Search</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="address_search-tab" data-toggle="pill" href="#address_search" role="tab" aria-controls="people_search" aria-selected="false">Address Serch</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="all_search" role="tabpanel" aria-labelledby="all_search-tab">
+											<div class="row">
+												<div class="col-md-12 text-left">
+													<div class="form-group m-t-10">
+														<input type="search" class="form-control" placeholder="Search as You link">
+													</div>
+													<small> e.g. Chan Tai Man or ABC Company or  	HCA1234/2009</small>
+												</div>
+											</div>
+									</div>
+									<div class="tab-pane fade" id="company_search" role="tabpanel" aria-labelledby="company_search-tab">
+										<div class="row">
+												<div class="col-md-12 text-left">
+													<div class="form-group m-t-10">
+														<input type="search" class="form-control" placeholder="Court Type">
+													</div>
+													<div class="form-group m-b-5">
+														<input id="exact_search" type="checkbox">
+														<label for="exact_search">Exact Search</label>
+													</div>
+													<small>e.g. ABC Company Limited</small>
+												</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="people_search" role="tabpanel" aria-labelledby="people_search-tab">
+										<div class="row">
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Last name">
+													</div>
+												</div>
 
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Middle Name">
+													</div>
+												</div>
+										</div>
+
+											<div class="row">
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Given name">
+													</div>
+												</div>
+
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Chinese Name">
+													</div>
+												</div>
+										</div>
+										
+										<div class="row text-left">
+											<div class="col-md-6">
+
+												<div class="form-group m-b-5">
+														<input id="exact_searchh" type="checkbox">
+														<label for="exact_searchh">Exact Search</label>
+												</div>
+											</div>
+										</div>
+										<div class="row text-left">
+											<div class="col-md-6">
+												<div class="form-group m-b-5">
+														<input id="bankruptcy" type="checkbox">
+														<label for="bankruptcy">Bankruptcy records search only</label>
+												</div>
+												
+											</div>
+											<div class="col-md-6">
+												<div class="form-group m-b-5">
+														<input id="bankruptcyy" type="checkbox">
+														<label for="bankruptcyy">Company Directors search only only</label>
+												</div>
+											</div>
+										</div>
+										<div class="row text-left">
+											<div class="col-md-6">
+												<div class="form-group m-b-5">
+														<input placeholder="HKID" type="text"> <br />
+														<small>Enter first 4 charcter only e.g. a123</small>
+												</div>
+												
+											</div>
+											
+										</div>
+
+									</div>
+									<div class="tab-pane fade" id="address_search" role="tabpanel" aria-labelledby="address_search-tab">
+										<div class="row">
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Room">
+													</div>
+												</div>
+
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Floor ">
+													</div>
+												</div>
+
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Block">
+													</div>
+												</div>
+										</div>
+
+											<div class="row">
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Building">
+													</div>
+												</div>
+
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Estate">
+													</div>
+												</div>
+										</div>
+
+										<div class="row">
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Street Number">
+													</div>
+												</div>
+
+												<div class="col-md-6 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Street Name">
+													</div>
+												</div>
+										</div>
+
+										<div class="row">
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="DD No">
+													</div>
+												</div>
+
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Lot No">
+													</div>
+												</div>
+
+												<div class="col-md-4 text-left">
+													<div class="form-group m-t-10">
+														<input type="text" class="form-control" placeholder="Car Park No">
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 text-left">
+									<button class="btn orange_bg btn-md m-l-0"><i class="fa fa-search"></i> Search</button>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+		<div class="container-fluid">
+		<div class="flash_section">
+			
+			<div class="form-group text-center">
+				<h2 class="orange_txt">Get Your Search Result in a Flash</h2>
+			</div>
+				
+
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								
+							<i class="fa fa-rocket fa-2x"></i>
+							<h4>Quick</h4>
+							<p>This text is for illustration</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								
+							<i class="fa fa-thumbs-up fa-2x"></i>
+							<h4>Easy</h4>
+							<p>This text is for illustration</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								
+							<i class="fa fa-shield-alt fa-2x"></i>
+							<h4>Reliable</h4>
+							<p>This text is for illustration</p>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		
+
+        <!--  //*--- View Service details */ -->
+        <div class="view_details text-center">
+        	<div class="row">
+        		<div class="col-md-12 light_grey_bg">
+        			
+        		<h5 class="orange_txt p-10 m-b-0">View Services Details <i class="fa fa-caret-down"></i></h5>
+        		</div>
+       		</div>	
         </div>
-    </div>
+		<div class="service_details text-center">
+			<div class="row">
+				<div class="col-md-8 orange_bg third">
+					
+				<div class="">
+						<h4>Know Your Xx better in 5 seconds</h4>
+						<p>Illustration this text is illustration purpose</p>
+						<p>Illustration this text is illustration purpose</p>
+						<p>Illustration this text is illustration purpose</p>	
+				</div>
+				</div>
+				<div class="col-md-4 p-l-0 p-r-0">
+					
+				<div class="one_third thumbnail">
+					
+				</div>
+				</div>
+			</div>
+			
+		</div>
+
+	
+          <div class="view_details text-center">
+        	<div class="row">
+        		<div class="col-md-12 light_grey_bg">
+        			
+        		<h5 class="orange_txt p-10 m-b-0">Get Started <i class="fa fa-caret-down"></i></h5>
+        		</div>
+       		</div>	
+        </div>
+
+		<div class="get_started">
+			
+                <div class="row text-center">
+                	<div class="col-md-4 thumbnail"></div>
+                	<div class="col-md-4 third purple_bg">
+                		<div class="">
+	                		<h5>Corporate Bussiness</h5>
+							<p>Evaluate with clarity- identify height risk
+								credit applications, multiple claim activities,
+								list of backruptcies, and more...
+	                			
+							</p>
+                		</div>
+                	</div>
+                	<div class="col-md-4 thumbnail"></div>
+
+
+
+
+                	<div class="col-md-4 third purple_bg">
+                		<div class="">
+	                		<h5>Banking</h5>
+							<p>Evaluate with clarity- identify height risk
+								credit applications, multiple claim activities,
+								list of backruptcies, and more...
+	                			
+							</p>
+                		</div>
+                	</div>
+                	<div class="col-md-4 thumbnail"></div>
+                	<div class="col-md-4 third purple_bg">
+                		<div class="">
+	                		<h5>House Hold</h5>
+							<p>Evaluate with clarity- identify height risk
+								credit applications, multiple claim activities,
+								list of backruptcies, and more...
+	                			
+							</p>
+                		</div>
+                	</div>
+                </div>
+		</div>
+         
+         <div class="flash_section">
+			
+			<div class="form-group text-center">
+				<h3 class="orange_txt">Our Customer Conducted</h3>
+				<h2 class="orange_txt">20,000+  searches Per Month</h2>
+			</div>
+				
+            
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								
+							<i class="fa fa-users fa-2x"></i>
+							<h4 class="orange_txt">500+</h4>
+							<p>This text is for illustration</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								
+							<i class="fa fa-file-alt fa-2x"></i>
+							<h4 class="orange_txt">Xx%</h4>
+							<p>User renewwal/year</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="tiles">
+								<i class="fa fa-hand-pointer fa-2x"></i>
+								<h4 class="orange_txt">67,000+</h4>
+								<p>Search conducted / Year</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+	</main>
+
+		<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 ">
+					<div class="row">
+						<div class="col-md-5 footer_content">
+							<span class="h6">Contact </span>
+							<p class="m-b-0 m-t-10">
+								<i class="fa fa-map-marker orange_txt"></i> <strong> Address : </strong> 
+								Suite 4008, 40/F Hong Kong Plaza 188, <br />
+								Connaught Road West HongKong
+							</p>
+							<p class="m-b-5"><i class="fa fa-phone orange_txt"></i> <strong>Phone : </strong> +852 2589 4220 </p>
+							<p class="m-b-5"><i class="fa fa-fax  orange_txt"></i> <strong>Fax : </strong> +852 3007 2585</p>
+						</div>
+						<div class="col-md-3 footer_content">
+							<span class="h6">Useful Links  </span>
+							<p class="m-b-5 m-t-10"> <i class="fa fa-chevron-right orange_txt"></i> <a> Help</a> </p>
+							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i><a> Disclaimer </a></p>
+							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i> <a>Terms & Conditions</a> </p>
+							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i> <a>Privacy </a></p>
+						</div>
+						<div class="col-md-4 text-right footer_content">
+							<img src="${pageContext.request.contextPath}/resources/img/favicon.png" alt="" class="logo">
+							<span class="white_txt h3">D - Law</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/google_translator.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-select.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-datetimepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 </body>
+
 </html>
 

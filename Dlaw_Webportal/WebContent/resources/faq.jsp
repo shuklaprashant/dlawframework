@@ -5,55 +5,18 @@
 	<title>D-Law : Faq</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="assets/img/favicon.png">
-	<link href="assets/font-awesome/css/regular.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/solid.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
-	<link rel="stylesheet" href="assets/css/style_home.css">
+	<link rel="icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/regular.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/solid.css" rel="stylesheet">
+	<link href="${pageContext.request.contextPath}/resources/font-awesome/css/fontawesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-select.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style_home.css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html" class="brand_logo">
-				<img src="assets/img/favicon.png" alt="" class="logo">
-				<span class="white_txt h3">D - Law</span>
-			</a>
-			<div class="mobile_btn">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-</div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="dropdown">
-					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown">
-						<a class="dropdown-item" href="about.html">About D-Law</a>
-						<a class="dropdown-item" href="signup.html">Subscriber Registraion Form</a>
-						<a class="dropdown-item" href="#!">Email Verification</a>
-						<a class="dropdown-item" href="vision.html">Vision and Mission</a>
-						<a class="dropdown-item" href="values.html">Values</a>
-						<a class="dropdown-item" href="what_new.html">What's New</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="#!" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Clients</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown">
-						<a class="dropdown-item" href="legal.html">Legal</a>
-						<a class="dropdown-item" href="banking.html">Banking & Finance</a>
-						<a class="dropdown-item" href="corporate.html">Corporate & Business</a>
-						<a class="dropdown-item" href="faq.html">FAQ</a>
-					</div>
-				</li>
-				<li><a href="login.html">Login</a></li>
-				<li><a id="google_translate_element"></a></li>
-</ul>
-		</nav>
-	</header>
+	<%@include file="mainHeader.jsp" %>
 	<main>
 		<div class="container-fluid">
 			<div class="row">
@@ -249,7 +212,7 @@
 							<p class="m-b-5"> <i class="fa fa-chevron-right orange_txt"></i> <a>Privacy </a></p>
 						</div>
 						<div class="col-md-4 text-right footer_content">
-							<img src="../assets/img/favicon.png" alt="" class="logo">
+							<img src="${pageContext.request.contextPath}/resources/img/favicon.png" alt="" class="logo">
 							<span class="white_txt h3">D - Law</span>
 						</div>
 					</div>
@@ -258,13 +221,13 @@
 		</div>
 	</footer>
 
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/google_translator.js"></script>
-	<script src="assets/js/bootstrap-select.js"></script>
-	<script src="assets/js/bootstrap-datetimepicker.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/google_translator.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-select.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/bootstrap-datetimepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
 </body>
 
 </html>
